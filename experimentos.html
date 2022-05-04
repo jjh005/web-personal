@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>eXPERIMENTOS</title>
+  </head>
+  <body>
+    <h1>Tabla Con Inputs y Labels</h1>
+    <form id="forma">
+      <table border="1" cellpadding="20%">
+        <thead>
+          <tr>
+            <td>
+              <p>Label</p>
+            </td>
+            <td>
+              <p>Input</p>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="forma"
+                >Ingresa Texto
+                <abbr
+                  title="Texto Obligatorio max. 20 Caracteres"
+                  aria-label="Es Requerido"
+                  >*</abbr
+                ></label
+              >
+            </td>
+            <td>
+              <input id="forma" type="text" maxlength="20" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="forma"
+                >Un Botón
+                <abbr title="Boton de Prueba"></abbr>
+              </label>
+            </td>
+            <td>
+              <input id="forma" type="button" value="Soy un Botón" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="forma"></label>
+              <span title="Selecciona la Caja">Soy un Checkbox</span>
+            </td>
+            <td>
+              <input
+                id="forma"
+                type="checkbox"
+                name="checking"
+                title="Selecciona"
+              />SI <input type="checkbox" name="checking" id="forma" />Claro
+            </td>
+          </tr>
+          <tr>
+            <td><label for="forma">Paleta de Coleres</label></td>
+            <td><input id="forma" type="color" /></td>
+          </tr>
+          <tr>
+            <td><label for="forma">Fecha Sin Tiempo</label></td>
+            <td><input id="forma" type="date" /></td>
+          </tr>
+          <tr>
+            <td><label for="forma">Subir Archivo</label></td>
+            <td><input id="forma" type="file" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="forma"
+                >Ingreso de Password <abbr title="Maximo 10 Caracteres">*</abbr>
+              </label>
+            </td>
+            <td><input id="forma" type="password" maxlength="20" /></td>
+          </tr>
+          <tr>
+            <td>
+              <label for="forma" title="Selecciona Solo Uno">Radio</label>
+            </td>
+            <td>
+              <input id="forma" type="radio" name="radio" value="si" />SI <br />
+              <input id="forma" type="radio" name="radio" value="no" />NO
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="forma" title="Resetear todo el formulario"
+                >Resetear Formulario</label
+              >
+            </td>
+            <td>
+              <input
+                id="forma"
+                type="reset"
+                value="Reiniciar Formulario"
+                title="Se Borraran todos los campos del formulario"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="forma" title="Botón de Envio de Formulario"
+                >Botón Submit</label
+              >
+            </td>
+            <td>
+              <input
+                id="forma"
+                type="submit"
+                title="Botón de Envio de Formulario"
+                value="Enviar Fomulario"
+              />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

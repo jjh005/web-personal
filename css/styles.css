@@ -1,0 +1,370 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+/* ------------ CLASSES ----------- */
+
+.div-contenido-body {
+  /*al darle la propiedad max-width, el div se agradará maximo 1200px
+  para que asi la imagen no se pixelee
+  luego en margin: 0 auto; el auto es para que el contenido del div
+  quede centrado*/
+
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header-index,
+.header-experience,
+.header-library,
+.header-hobbies,
+.header-contacto {
+  display: inline-block;
+  width: 100%;
+}
+
+.div-img-portada {
+  /*SYNTAX box-shadow:
+  box-shadow: none|h-offset v-offset blur spread color 
+                |inset|initial|inherit;
+  Con h-offset y v-offset igual a 0, no se desplza 
+  la sombra. Entonces que da borde uniforme
+  en todos loa lDOS 
+  el spread es como el grosor de la sombra.
+  si esta la prop inset, la extencio de la sombra
+  va hacia dentro, caso contrario, la sombra va hacia 
+  afuera             
+                */
+  display: inline;
+  float: left;
+  clear: left;
+  max-width: 100%;
+  box-shadow: 0px 0px 40px 60px grey inset, 0px 0px 40px 60px grey;
+  border-radius: 20%;
+  padding: 0 2%;
+}
+
+.img-portada {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+  border-radius: 30%;
+}
+
+.table-datos-presentacion {
+  display: inline;
+  float: left;
+  clear: left;
+  top: 100px;
+  width: 100%;
+  margin-left: 0;
+  margin-top: -14%;
+}
+
+.table-experience {
+  width: 10%;
+  margin: 0 auto;
+  border-spacing: 1em;
+}
+
+.div-icon-jobs {
+  width: 100%;
+}
+
+.img-icon-job {
+  display: block;
+  width: 100%;
+}
+
+.td-foto-perfil {
+  padding-right: 1.5%;
+  width: 20%;
+}
+
+.img-foto-perfil {
+  display: inline;
+  width: 100%;
+  height: auto;
+  border: 2px solid #32454e;
+  border-radius: 100%;
+  margin-right: 20px;
+
+  box-shadow: 0px 0px 40px 60px #e6e6de inset, 0px 0px 40px 60px #e6e6de;
+}
+
+.footer-index {
+  text-align: center;
+}
+
+.div-figure {
+  width: 100%;
+  height: auto;
+}
+
+.div-titulo-h1 {
+  text-align: center;
+  display: inline;
+  float: left;
+  clear: left;
+  top: 100px;
+  width: 100%;
+  margin-top: -51%;
+}
+
+.circulo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgb(251, 250, 245);
+  background: radial-gradient(
+    circle,
+    rgba(251, 250, 245, 1) 0%,
+    rgba(70, 135, 194, 1) 100%
+  );
+}
+
+.hr-1 {
+  position: relative;
+  max-width: 900px;
+  border: 0;
+  height: 3.5px;
+  margin-top: 20px;
+
+  background-image: -webkit-gradient(
+    linear,
+    100% 0%,
+    0% 0%,
+    from(#e4efd8),
+    to(#e4efd8),
+    color-stop(0.5, #085370)
+  );
+  text-align: center;
+}
+
+/*--------------IDS--------------*/
+
+#body-index {
+  background-color: rgb(228, 239, 216);
+}
+
+#body-experience {
+  background-color: #f2f2f0;
+}
+
+#body-hobbies {
+  background-color: #03061b;
+  color: #f9fdfd;
+}
+
+#body-library {
+  background-color: #d0eefa;
+}
+
+#body-contacto {
+  background-color: #edeae6;
+}
+
+#div-portada-index {
+  box-shadow: 0px 0px 40px 80px #e4efd8 inset, 0px 0px 40px 90px #e4efd8;
+}
+
+#div-portada-experience {
+  box-shadow: 0px 0px 40px 60px #f2f2f0 inset, 0px 0px 40px 60px #f2f2f0;
+}
+
+#div-portada-library {
+  box-shadow: 0px 0px 40px 60px #d0eefa inset, 0px 0px 40px 60px #d0eefa;
+}
+
+#div-portada-hobbies {
+  box-shadow: 0px 0px 40px 60px #03061b inset, 0px 0px 40px 60px #03061b;
+}
+
+#div-portada-contacto {
+  box-shadow: 0px 0px 40px 60px #edeae6 inset, 0px 0px 40px 60px #edeae6;
+}
+
+#cover-index {
+  box-shadow: 0px 0px 40px 60px #e4efd8 inset, 0px 0px 40px 60px #e4efd8;
+}
+
+#cover-hobbies {
+  box-shadow: 0px 0px 40px 60px #03061b inset, 0px 0px 40px 60px #03061b;
+}
+
+#cover-experience {
+  box-shadow: 0px 0px 40px 60px #f2f2f0 inset, 0px 0px 40px 60px #f2f2f0;
+}
+
+#cover-library {
+  box-shadow: 0px 0px 40px 60px #d0eefa inset, 0px 0px 40px 60px #d0eefa;
+}
+
+#cover-contacto {
+  box-shadow: 0px 0px 40px 60px #edeae6 inset, 0px 0px 40px 60px #edeae6;
+}
+
+#hr-experience {
+  background-image: -webkit-gradient(
+    linear,
+    100% 0%,
+    0% 0%,
+    from(#f6f4ec),
+    to(#f6f4ec),
+    color-stop(0.5, #5e9ad6)
+  );
+}
+
+#hr-library {
+  background-image: -webkit-gradient(
+    linear,
+    100% 0%,
+    0% 0%,
+    from(#d0eefa),
+    to(#d0eefa),
+    color-stop(0.5, #0277b3)
+  );
+}
+
+#hr-hobbies {
+  background-image: -webkit-gradient(
+    linear,
+    100% 0%,
+    0% 0%,
+    from(#03061b),
+    to(#03061b),
+    color-stop(0.5, #1a87ca)
+  );
+}
+
+#hr-contacto {
+  background-image: -webkit-gradient(
+    linear,
+    100% 0%,
+    0% 0%,
+    from(#edeae6),
+    to(#edeae6),
+    color-stop(0.5, #aaa08a)
+  );
+}
+
+#img-mountain-blue {
+  background-color: #e4efd8;
+}
+
+#img-blue-valley {
+  background-color: #f6f4ec;
+}
+
+#img-sky {
+  background-color: #03061b;
+}
+
+#img-callme {
+  background-color: #d0eefa;
+}
+
+#img-hills {
+  background-color: white;
+}
+
+#img-bird-hobbies {
+  max-width: 150px;
+  height: auto;
+}
+
+#img-bird-library {
+  max-width: 100px;
+  height: auto;
+}
+.img-end {
+  width: 25%;
+  margin: 0 auto;
+  display: block;
+}
+/* -------------- SELECTORS ----------- */
+.table-experience tr > td {
+  vertical-align: middle;
+  text-align: center;
+}
+#art-experience > * {
+  text-align: center;
+}
+
+.table-experience > thead {
+  font-size: 2em;
+}
+
+.td-datos-personales p:first-child {
+  font-size: 200%;
+}
+
+.td-datos-personales p:last-child {
+  font-size: 1rem;
+}
+
+.ul-nav-bar li > img {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.nav-footer a > img {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.nav-footer > a {
+  display: inline-block;
+}
+
+.nav-footer img.grow {
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-footer img.grow:hover {
+  transform: scale(2.5);
+  border: solid white 0.007em;
+}
+
+#nav-bar-index > a {
+  margin: 0% 0% 2%;
+}
+
+.nav-footer a > p {
+  margin: 0;
+}
+
+#nav-bar-index a > img {
+  width: 5em;
+  height: 5em;
+}
+
+#img-mountain-blue:hover {
+  box-shadow: 0 0 11px rgba(0, 51, 23, 1);
+}
+
+#img-blue-valley:hover {
+  box-shadow: 0 0 11px rgba(97, 148, 191, 1);
+}
+
+#img-sky:hover {
+  box-shadow: 0 0 11px rgba(30, 81, 163, 1);
+}
+
+#img-callme:hover {
+  box-shadow: 0 0 11px rgba(1, 112, 172, 1);
+}
+
+#img-hills:hover {
+  box-shadow: 0 0 11px rgba(170, 160, 138, 1);
+}
