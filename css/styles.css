@@ -82,6 +82,10 @@ h1 {
   width: 100%;
 }
 
+.img-icon-job:hover {
+  filter: drop-shadow(0 0 0.75rem #5e9ad6);
+}
+
 .td-foto-perfil {
   padding-right: 1.5%;
   width: 20%;
