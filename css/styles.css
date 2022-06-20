@@ -331,19 +331,12 @@ a {
 
 .nav-footer a > p {
   margin: 0;
-}
-
-.nav-footer a:link {
-  text-decoration: none;
+  color: black;
 }
 
 .nav-footer a:visited {
   color: black;
   font-weight: bold;
-}
-
-#nav-footer-index > a {
-  color: #d1edd7;
 }
 
 #nav-bar-index a > img {
