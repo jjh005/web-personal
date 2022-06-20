@@ -417,8 +417,13 @@ a {
   color: #e4efd8;
 }
 
+#form-mensaje {
+  width: 100%;
+  height: auto;
+}
+
 #id-area-texto {
-  width: 500px;
+  width: 100%;
   height: 200px;
   max-width: 900px;
 }
