@@ -6,6 +6,10 @@ h1 {
   font-size: 3em;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* ------------ CLASSES ----------- */
 
 .div-contenido-body {
@@ -17,6 +21,7 @@ h1 {
   max-width: 900px;
   height: auto;
   margin: 0 auto;
+  text-align: center;
 }
 
 .header-index,
@@ -40,12 +45,8 @@ h1 {
   va hacia dentro, caso contrario, la sombra va hacia 
   afuera             
                 */
-  display: inline;
-  float: left;
-  clear: left;
+  display: inline-block;
   max-width: 100%;
-  box-shadow: 0px 0px 40px 60px grey inset, 0px 0px 40px 60px grey;
-  border-radius: 20%;
   padding: 0 2%;
 }
 
@@ -54,12 +55,10 @@ h1 {
   max-width: 100%;
   height: auto;
   z-index: -1;
-  border-radius: 30%;
 }
 
 .table-datos-presentacion {
-  display: inline;
-  float: left;
+  display: inline-block;
   clear: left;
   top: 100px;
   width: 100%;
@@ -103,7 +102,10 @@ h1 {
 }
 
 .footer-index {
+  max-width: 900px;
   text-align: center;
+  padding-bottom: 3%;
+  padding-top: 3%;
 }
 
 .div-figure {
@@ -133,12 +135,15 @@ h1 {
   );
 }
 
+.div-hr-1 {
+  display: inline-block;
+  width: 100%;
+}
+
 .hr-1 {
-  position: relative;
   max-width: 900px;
   border: 0;
   height: 3.5px;
-  margin-top: 20px;
 
   background-image: -webkit-gradient(
     linear,
@@ -162,8 +167,20 @@ h1 {
 }
 
 #body-hobbies {
-  background-color: #03061b;
+  /* background-color: #03061b; */
+  background-color: #000e10;
+
   color: #f9fdfd;
+
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(72, 120, 124, 1) 37%,
+    rgba(22, 39, 89, 1) 57%,
+    rgba(8, 15, 38, 1) 73%,
+    rgba(0, 0, 0, 1) 94%
+  ); */
 }
 
 #body-library {
@@ -172,46 +189,6 @@ h1 {
 
 #body-contacto {
   background-color: #edeae6;
-}
-
-#div-portada-index {
-  box-shadow: 0px 0px 40px 80px #e4efd8 inset, 0px 0px 40px 90px #e4efd8;
-}
-
-#div-portada-experience {
-  box-shadow: 0px 0px 40px 60px #f2f2f0 inset, 0px 0px 40px 60px #f2f2f0;
-}
-
-#div-portada-library {
-  box-shadow: 0px 0px 40px 60px #d0eefa inset, 0px 0px 40px 60px #d0eefa;
-}
-
-#div-portada-hobbies {
-  box-shadow: 0px 0px 40px 60px #03061b inset, 0px 0px 40px 60px #03061b;
-}
-
-#div-portada-contacto {
-  box-shadow: 0px 0px 40px 60px #edeae6 inset, 0px 0px 40px 60px #edeae6;
-}
-
-#cover-index {
-  box-shadow: 0px 0px 40px 60px #e4efd8 inset, 0px 0px 40px 60px #e4efd8;
-}
-
-#cover-hobbies {
-  box-shadow: 0px 0px 40px 60px #03061b inset, 0px 0px 40px 60px #03061b;
-}
-
-#cover-experience {
-  box-shadow: 0px 0px 40px 60px #f2f2f0 inset, 0px 0px 40px 60px #f2f2f0;
-}
-
-#cover-library {
-  box-shadow: 0px 0px 40px 60px #d0eefa inset, 0px 0px 40px 60px #d0eefa;
-}
-
-#cover-contacto {
-  box-shadow: 0px 0px 40px 60px #edeae6 inset, 0px 0px 40px 60px #edeae6;
 }
 
 #hr-experience {
@@ -291,7 +268,14 @@ h1 {
   width: 25%;
   margin: 0 auto;
   display: block;
+  transition: 1s ease;
 }
+
+.img-end:hover {
+  -webkit-filter: blur(5px);
+  transition: 1s ease;
+}
+
 /* -------------- SELECTORS ----------- */
 .table-experience tr > td {
   vertical-align: middle;
@@ -313,31 +297,32 @@ h1 {
   font-size: 1rem;
 }
 
-.ul-nav-bar li > img {
+/* .ul-nav-bar li > img {
   position: relative;
-  width: 2em;
-  height: 2em;
+  width: 4em;
+  height: 4em;
   border-radius: 50%;
-}
+} */
 
 .nav-footer a > img {
   position: relative;
-  width: 2em;
-  height: 2em;
+  width: 4rem;
+  height: 4rem;
   border-radius: 50%;
 }
 
 .nav-footer > a {
   display: inline-block;
+  padding: 0 1.5%;
 }
 
 .nav-footer img.grow {
-  transition: all 0.1s ease-in-out;
+  transition: 1s ease;
 }
 
 .nav-footer img.grow:hover {
-  transform: scale(2.5);
-  border: solid white 0.007em;
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
 }
 
 #nav-bar-index > a {
@@ -348,27 +333,48 @@ h1 {
   margin: 0;
 }
 
+.nav-footer a:link {
+  text-decoration: none;
+}
+
+.nav-footer a:visited {
+  color: black;
+  font-weight: bold;
+}
+
+#nav-footer-index > a {
+  color: #d1edd7;
+}
+
 #nav-bar-index a > img {
   width: 5em;
   height: 5em;
 }
 
 #img-mountain-blue:hover {
-  box-shadow: 0 0 11px rgba(0, 51, 23, 1);
+  box-shadow: 0 0 11px rgb(144, 226, 181);
 }
 
 #img-blue-valley:hover {
   box-shadow: 0 0 11px rgba(97, 148, 191, 1);
+  background-color: #e5f1fb;
+}
+
+#img-sky {
+  background-color: white;
 }
 
 #img-sky:hover {
-  box-shadow: 0 0 11px rgba(30, 81, 163, 1);
+  box-shadow: 0 0 11px rgb(255, 255, 255, 1);
+  background-color: #000e10;
 }
 
 #img-callme:hover {
   box-shadow: 0 0 11px rgba(1, 112, 172, 1);
+  background-color: white;
 }
 
 #img-hills:hover {
   box-shadow: 0 0 11px rgba(170, 160, 138, 1);
+  background-color: white;
 }
