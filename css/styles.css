@@ -167,7 +167,6 @@ a {
 }
 
 #body-hobbies {
-  /* background-color: #03061b; */
   background-color: #000e10;
 
   color: #f9fdfd;
@@ -218,9 +217,9 @@ a {
     linear,
     100% 0%,
     0% 0%,
-    from(#03061b),
-    to(#03061b),
-    color-stop(0.5, #1a87ca)
+    from(#000e10),
+    to(#000e10),
+    color-stop(0.5, #5a8c87)
   );
 }
 
@@ -331,11 +330,11 @@ a {
 
 .nav-footer a > p {
   margin: 0;
-  color: black;
+  font-weight: bold;
 }
 
 .nav-footer a:visited {
-  color: black;
+  color: #02546a;
   font-weight: bold;
 }
 
@@ -344,9 +343,14 @@ a {
   height: 5em;
 }
 
-#nav-footer-index a > p {
+#nav-footer-hobbies a > p {
   color: #02546a;
 }
+
+#nav-footer-hobbies a > p:visited {
+  color: #02546a;
+}
+
 #img-mountain-blue:hover {
   box-shadow: 0 0 11px rgb(144, 226, 181);
 }
