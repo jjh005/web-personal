@@ -338,6 +338,10 @@ a {
   font-weight: bold;
 }
 
+.gallery {
+  max-width: 900px;
+}
+
 #nav-bar-index a > img {
   width: 5em;
   height: 5em;
@@ -377,4 +381,14 @@ a {
 #img-hills:hover {
   box-shadow: 0 0 11px rgba(170, 160, 138, 1);
   background-color: white;
+}
+
+#ol-hobbies {
+  list-style: none;
+  text-align: left;
+  margin-left: 22%;
+}
+
+#ol-hobbies > li {
+  margin-bottom: 1%;
 }
