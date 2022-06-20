@@ -416,3 +416,9 @@ a {
 #div-titulo-h1 > h1 {
   color: #e4efd8;
 }
+
+#id-area-texto {
+  width: 500px;
+  height: 200px;
+  max-width: 900px;
+}
