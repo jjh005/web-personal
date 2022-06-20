@@ -313,7 +313,7 @@ a {
 
 .nav-footer > a {
   display: inline-block;
-  padding: 0 1.5%;
+  padding: 0 0.5% 1.5%;
 }
 
 .nav-footer img.grow {
@@ -344,6 +344,9 @@ a {
   height: 5em;
 }
 
+#nav-footer-index a > p {
+  color: #02546a;
+}
 #img-mountain-blue:hover {
   box-shadow: 0 0 11px rgb(144, 226, 181);
 }
