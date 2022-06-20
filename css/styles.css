@@ -296,13 +296,6 @@ a {
   font-size: 1rem;
 }
 
-/* .ul-nav-bar li > img {
-  position: relative;
-  width: 4em;
-  height: 4em;
-  border-radius: 50%;
-} */
-
 .nav-footer a > img {
   position: relative;
   width: 4rem;
@@ -401,4 +394,25 @@ a {
 #id-gallery {
   width: 100%;
   height: auto;
+}
+
+#div-cv {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#div-cv > a {
+  color: #02546a;
+  transition: 0.3s ease;
+}
+#div-cv > a:hover {
+  color: #02546a;
+  font-weight: bold;
+}
+
+#div-cv > a:active {
+  color: red;
+}
+
+#div-titulo-h1 > h1 {
+  color: #e4efd8;
 }
