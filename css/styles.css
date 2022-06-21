@@ -13,11 +13,6 @@ a {
 /* ------------ CLASSES ----------- */
 
 .div-contenido-body {
-  /*al darle la propiedad max-width, el div se agradará maximo 1200px
-  para que asi la imagen no se pixelee
-  luego en margin: 0 auto; el auto es para que el contenido del div
-  quede centrado*/
-
   max-width: 900px;
   height: auto;
   margin: 0 auto;
@@ -34,17 +29,6 @@ a {
 }
 
 .div-img-portada {
-  /*SYNTAX box-shadow:
-  box-shadow: none|h-offset v-offset blur spread color 
-                |inset|initial|inherit;
-  Con h-offset y v-offset igual a 0, no se desplza 
-  la sombra. Entonces que da borde uniforme
-  en todos loa lDOS 
-  el spread es como el grosor de la sombra.
-  si esta la prop inset, la extencio de la sombra
-  va hacia dentro, caso contrario, la sombra va hacia 
-  afuera             
-                */
   display: inline-block;
   max-width: 100%;
   padding: 0 2%;
@@ -168,18 +152,7 @@ a {
 
 #body-hobbies {
   background-color: #000e10;
-
   color: #f9fdfd;
-
-  /* background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(72, 120, 124, 1) 37%,
-    rgba(22, 39, 89, 1) 57%,
-    rgba(8, 15, 38, 1) 73%,
-    rgba(0, 0, 0, 1) 94%
-  ); */
 }
 
 #body-library {
