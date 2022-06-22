@@ -309,6 +309,21 @@ a {
   max-width: 900px;
 }
 
+.nav-rrss {
+  display: block;
+}
+.link-rrss {
+  margin: 2% 2%;
+}
+
+.ico-rrss {
+  width: 4%;
+}
+
+.div-redes-sociales {
+  margin: 3% 3%;
+}
+
 #nav-bar-index a > img {
   width: 5em;
   height: 5em;
@@ -392,11 +407,15 @@ a {
 #form-mensaje {
   width: 100%;
   height: auto;
-  padding: 1% 1%;
+  margin-top: 2%;
 }
 
 #id-area-texto {
   width: 50%;
   height: 200px;
   max-width: 900px;
+}
+
+#form-mensaje > div {
+  margin-bottom: 2%;
 }
