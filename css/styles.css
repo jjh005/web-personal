@@ -396,6 +396,7 @@ a {
 }
 
 #id-area-texto {
+  width: 50%;
   height: 200px;
   max-width: 900px;
 }
