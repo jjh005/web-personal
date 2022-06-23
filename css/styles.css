@@ -238,6 +238,19 @@ a {
   max-width: 100px;
   height: auto;
 }
+
+#id-ico-workplace:hover {
+  filter: drop-shadow(0 2rem 0.55rem #4326c4);
+}
+
+#id-ico-in:hover {
+  filter: drop-shadow(0 2rem 0.55rem #0077b7);
+}
+
+#id-ico-spotify:hover {
+  filter: drop-shadow(0 2rem 0.55rem #18d860);
+}
+
 .img-end {
   width: 25%;
   margin: 0 auto;
@@ -323,7 +336,7 @@ a {
 }
 
 .div-redes-sociales {
-  margin: 3% 3%;
+  margin: 16% 3% 5% 3%;
 }
 
 #td-datos-personales > p {
