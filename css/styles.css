@@ -271,15 +271,15 @@ a {
 }
 
 #id-ico-workplace:hover {
-  filter: drop-shadow(0 2rem 0.55rem #4326c4);
+  filter: drop-shadow(0 0.1rem 0.55rem #4326c4);
 }
 
 #id-ico-in:hover {
-  filter: drop-shadow(0 2rem 0.55rem #0077b7);
+  filter: drop-shadow(0 0.1rem 0.55rem #0077b7);
 }
 
 #id-ico-spotify:hover {
-  filter: drop-shadow(0 2rem 0.55rem #18d860);
+  filter: drop-shadow(0 0.1rem 0.55rem #18d860);
 }
 
 #img-mountain-blue:hover {
@@ -439,4 +439,48 @@ a {
 
 #form-mensaje > div {
   margin-bottom: 2%;
+}
+
+button {
+  border-radius: 4px;
+  background-color: #914c4a;
+  border: none;
+  padding: 1% 1%;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+}
+
+button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button:after {
+  content: "»";
+  position: absolute;
+  opacity: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button:hover {
+  padding-right: 24px;
+  padding-left: 8px;
+}
+
+button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
