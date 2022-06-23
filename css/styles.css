@@ -326,8 +326,7 @@ a {
   margin: 3% 3%;
 }
 
-#td-datos-personales > p,
-h1 {
+#td-datos-personales > p {
   text-align: left;
 }
 
