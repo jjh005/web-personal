@@ -372,7 +372,8 @@ a {
 }
 
 #ol-hobbies {
-  list-style: none;
+  list-style-position: inside;
+  list-style-type: disc;
   text-align: left;
 }
 
