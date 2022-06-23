@@ -139,6 +139,37 @@ a {
   text-align: center;
 }
 
+.img-end {
+  width: 25%;
+  margin: 0 auto;
+  display: block;
+  transition: 1s ease;
+}
+
+.img-end:hover {
+  -webkit-filter: blur(5px);
+  transition: 1s ease;
+}
+
+.gallery {
+  max-width: 900px;
+}
+
+.nav-rrss {
+  display: block;
+}
+.link-rrss {
+  margin: 2% 2%;
+}
+
+.ico-rrss {
+  width: 2.4rem;
+}
+
+.div-redes-sociales {
+  margin: 16% 3% 5% 3%;
+}
+
 /*--------------IDS--------------*/
 #p-nombre {
   margin-top: 2%;
@@ -251,16 +282,64 @@ a {
   filter: drop-shadow(0 2rem 0.55rem #18d860);
 }
 
-.img-end {
-  width: 25%;
-  margin: 0 auto;
-  display: block;
-  transition: 1s ease;
+#img-mountain-blue:hover {
+  box-shadow: 0 0 11px rgb(144, 226, 181);
 }
 
-.img-end:hover {
-  -webkit-filter: blur(5px);
-  transition: 1s ease;
+#img-blue-valley:hover {
+  box-shadow: 0 0 11px rgba(97, 148, 191, 1);
+  background-color: #e5f1fb;
+}
+
+#img-sky {
+  background-color: white;
+}
+
+#img-sky:hover {
+  box-shadow: 0 0 11px rgb(255, 255, 255, 1);
+  background-color: #000e10;
+}
+
+#img-callme:hover {
+  box-shadow: 0 0 11px rgba(1, 112, 172, 1);
+  background-color: white;
+}
+
+#img-hills:hover {
+  box-shadow: 0 0 11px rgba(170, 160, 138, 1);
+  background-color: white;
+}
+
+#ol-hobbies {
+  list-style-position: inside;
+  list-style-type: disc;
+  text-align: left;
+}
+
+#div-gallery {
+  max-width: 900px;
+  text-align: center;
+}
+#id-gallery {
+  width: 100%;
+  height: auto;
+}
+
+#div-cv {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#form-mensaje {
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+}
+
+#id-area-texto {
+  width: 50%;
+  height: 200px;
+  max-width: 900px;
 }
 
 /* -------------- SELECTORS ----------- */
@@ -320,25 +399,6 @@ a {
   font-weight: bold;
 }
 
-.gallery {
-  max-width: 900px;
-}
-
-.nav-rrss {
-  display: block;
-}
-.link-rrss {
-  margin: 2% 2%;
-}
-
-.ico-rrss {
-  width: 2.4rem;
-}
-
-.div-redes-sociales {
-  margin: 16% 3% 5% 3%;
-}
-
 #td-datos-personales > p {
   text-align: left;
 }
@@ -356,57 +416,10 @@ a {
   color: #02546a;
 }
 
-#img-mountain-blue:hover {
-  box-shadow: 0 0 11px rgb(144, 226, 181);
-}
-
-#img-blue-valley:hover {
-  box-shadow: 0 0 11px rgba(97, 148, 191, 1);
-  background-color: #e5f1fb;
-}
-
-#img-sky {
-  background-color: white;
-}
-
-#img-sky:hover {
-  box-shadow: 0 0 11px rgb(255, 255, 255, 1);
-  background-color: #000e10;
-}
-
-#img-callme:hover {
-  box-shadow: 0 0 11px rgba(1, 112, 172, 1);
-  background-color: white;
-}
-
-#img-hills:hover {
-  box-shadow: 0 0 11px rgba(170, 160, 138, 1);
-  background-color: white;
-}
-
-#ol-hobbies {
-  list-style-position: inside;
-  list-style-type: disc;
-  text-align: left;
-}
-
 #ol-hobbies > li {
   margin-bottom: 1%;
 }
 
-#div-gallery {
-  max-width: 900px;
-  text-align: center;
-}
-#id-gallery {
-  width: 100%;
-  height: auto;
-}
-
-#div-cv {
-  margin-top: 2%;
-  margin-bottom: 2%;
-}
 #div-cv > a {
   color: #02546a;
   transition: 0.3s ease;
@@ -422,18 +435,6 @@ a {
 
 #div-titulo-h1 > h1 {
   color: #e4efd8;
-}
-
-#form-mensaje {
-  width: 100%;
-  height: auto;
-  margin-top: 2%;
-}
-
-#id-area-texto {
-  width: 50%;
-  height: 200px;
-  max-width: 900px;
 }
 
 #form-mensaje > div {
