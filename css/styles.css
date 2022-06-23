@@ -42,8 +42,6 @@ a {
 }
 
 .table-datos-presentacion {
-  display: inline-block;
-  clear: left;
   top: 100px;
   width: 100%;
   margin-left: 0;
