@@ -441,7 +441,7 @@ a {
   margin-bottom: 2%;
 }
 
-button {
+.button {
   border-radius: 4px;
   background-color: #914c4a;
   border: none;
@@ -454,14 +454,14 @@ button {
   box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
 }
 
-button {
+.button {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-button:after {
+.button:after {
   content: "»";
   position: absolute;
   opacity: 0;
@@ -469,18 +469,22 @@ button:after {
   transition: 0.5s;
 }
 
-button:hover {
+.button:hover {
   padding-right: 24px;
   padding-left: 8px;
 }
 
-button:hover:after {
+.button:hover:after {
   opacity: 1;
   right: 10px;
 }
 
-button:active {
+.button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.link-rrss:active::after {
+  background-color: none;
 }
