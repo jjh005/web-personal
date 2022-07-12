@@ -280,6 +280,10 @@ a {
   filter: drop-shadow(0 0.1rem 0.55rem #0077b7);
 }
 
+#id-ico-github:hover {
+  filter: drop-shadow(0 0.1rem 0.55rem black);
+}
+
 #id-ico-spotify:hover {
   filter: drop-shadow(0 0.1rem 0.55rem #18d860);
 }
