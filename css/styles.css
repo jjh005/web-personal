@@ -46,14 +46,26 @@ a {
   margin-top: -14%;
 }
 
+.td-icon {
+  width: 120px; /* 👈 clave */
+  vertical-align: top; /* 🔼 arriba */
+}
+
 .table-experience {
-  width: 10%;
+  width: 100%;
   margin: 0 auto;
   border-spacing: 1em;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.descripcion-puesto {
+  width: 100%;
+  text-align: left;
 }
 
 .div-icon-jobs {
   width: 100%;
+  text-align: start;
 }
 
 .img-icon-job {
@@ -79,7 +91,9 @@ a {
   margin-top: 2%;
   margin-right: 20px;
 
-  box-shadow: 0px 0px 40px 60px #e6e6de inset, 0px 0px 40px 60px #e6e6de;
+  box-shadow:
+    0px 0px 40px 60px #e6e6de inset,
+    0px 0px 40px 60px #e6e6de;
 }
 
 .footer-index {
@@ -174,7 +188,8 @@ a {
 }
 
 #p-descripcion-corta {
-  font-size: 2rem;
+  font-size: 1rem;
+  display: inline-block;
 }
 
 #body-index {
@@ -349,10 +364,6 @@ a {
 }
 
 /* -------------- SELECTORS ----------- */
-.table-experience tr > td {
-  vertical-align: middle;
-  text-align: center;
-}
 #art-experience > * {
   text-align: center;
 }
@@ -488,4 +499,21 @@ button:active {
   background-color: #3e8e41;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+.job-item {
+  margin-bottom: 2em;
+}
+
+.puesto-header {
+  position: relative;
+  padding-left: 60px; /* espacio reservado para el icono */
+  margin-bottom: 0.6em;
+}
+
+.icono-empresa {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 20%; /* tamaño fijo del logo */
 }
