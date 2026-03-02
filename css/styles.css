@@ -183,6 +183,11 @@ a {
 }
 
 /*--------------IDS--------------*/
+
+#exp-profesional {
+  text-align: center;
+  font-size: 2em;
+}
 #p-nombre {
   margin-top: 2%;
 }
