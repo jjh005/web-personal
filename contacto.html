@@ -31,33 +31,59 @@
       <hr class="hr-1" id="hr-contacto">
 
       <h2>Enviar Correo Electrónico</h2>
-      <form id="form-mensaje" action="mailto:nicolas.9310@me.com" method="GET" enctype="text/plain" target=" _blank">
+
+      <form id="form-mensaje">
         <div>
-          <input type="text" placeholder="Asunto" name="subject" required />
+          <input type="text" placeholder="Asunto" name="subject" id="subject" required />
         </div>
+
         <div>
           <textarea id="id-area-texto" placeholder="Tu mensaje" name="body" required></textarea>
         </div>
+
         <div id="id-boton-contacto">
-          <button class="button"" type=" submit">Enviar un Mensaje</button>
+          <button class="button" type="submit">Enviar un Mensaje</button>
         </div>
       </form>
 
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+          emailjs.init("PhiWONvqx3jqX0ZN3");
+
+          document.getElementById("form-mensaje").addEventListener("submit", function (event) {
+            event.preventDefault(); // 👈 evita que abra mailto
+            emailjs.send("service_roxfjfg", "template_ib1b5ov", {
+              title: document.getElementById("subject").value,
+              message: document.getElementById("id-area-texto").value,
+              name: "Formulario Web",
+              time: new Date().toLocaleString()
+            })
+              .then(function () {
+                alert("Mensaje enviado correctamente ✅");
+                document.getElementById("form-mensaje").reset();
+              })
+              .catch(function (error) {
+                console.log(error);
+                alert("Error al enviar ❌");
+              });
+
+          });
+
+        });
+      </script>
+
       <div class="div-redes-sociales">
         <nav class="nav-rrss">
-          <a class="link-rrss" href="https://falabella.workplace.com/profile.php?id=100071119900314" target="_blank">
-            <img src="assets/icons/rrss/workplace.png" class="ico-rrss" id="id-ico-workplace" alt="">
-          </a>
+
           <a class="link-rrss" href="https://www.linkedin.com/in/nicolas9310" target="_blank">
             <img src="assets/icons/rrss/in.png" class="ico-rrss" id="id-ico-in" alt="">
           </a>
 
           <a class="link-rrss" href="https://github.com/jjh005" target="_blank">
             <img src="assets/icons/rrss/github.png" class="ico-rrss" id="id-ico-github" alt="">
-          </a>
-
-          <a class="link-rrss" href="https://open.spotify.com/user/nicolas.9310" target="_blank">
-            <img src="assets/icons/rrss/spotify.png" class="ico-rrss" id="id-ico-spotify" alt="">
           </a>
 
 
@@ -76,15 +102,15 @@
         </a>
         <a href="experience.html">
           <img src="assets/images/blue-valley.png" class="grow" id="img-blue-valley" alt="">
-          <p>Experience</p>
+          <p>Experiencia</p>
         </a>
-        <a href="hobbies.html">
+        <a href="estudio.html">
           <img src="assets/images/forest.png" class="grow" id="img-sky" alt="">
-          <p>Hobbies</p>
+          <p>Estudio</p>
         </a>
         <a href="contacto.html">
           <img src="assets/images/hills.png" class="grow" id="img-hills" alt="">
-          <p>Contact</p>
+          <p>Contacto</p>
         </a>
       </nav>
     </footer>
