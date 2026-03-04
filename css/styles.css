@@ -270,10 +270,6 @@ a {
   background-color: #f6f4ec;
 }
 
-#img-sky {
-  background-color: #03061b;
-}
-
 #img-callme {
   background-color: #d0eefa;
 }
@@ -292,20 +288,30 @@ a {
   height: auto;
 }
 
-#id-ico-workplace:hover {
-  filter: drop-shadow(0 0.1rem 0.55rem #4326c4);
+/* ----------- FIX iPhone ACTIVE ----------- */
+
+.link-rrss {
+  margin: 2% 2%;
+  display: inline-block; /* necesario para iOS */
+  -webkit-tap-highlight-color: transparent; /* evita el gris feo */
 }
 
-#id-ico-in:hover {
+.link-rrss:active #id-ico-in {
   filter: drop-shadow(0 0.1rem 0.55rem #0077b7);
 }
 
-#id-ico-github:hover {
+.link-rrss:active #id-ico-github {
   filter: drop-shadow(0 0.1rem 0.55rem black);
 }
 
-#id-ico-spotify:hover {
-  filter: drop-shadow(0 0.1rem 0.55rem #18d860);
+@media (hover: hover) {
+  #id-ico-in:hover {
+    filter: drop-shadow(0 0.1rem 0.55rem #0077b7);
+  }
+
+  #id-ico-github:hover {
+    filter: drop-shadow(0 0.1rem 0.55rem black);
+  }
 }
 
 #img-mountain-blue:hover {
