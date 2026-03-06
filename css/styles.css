@@ -702,3 +702,15 @@ button:active {
 #cv-icon {
   width: 35%;
 }
+
+#gif-enviando {
+  display: none; /* oculto al inicio */
+  text-align: center; /* centrado */
+  margin-top: 10px; /* espacio sobre el GIF */
+}
+
+#gif-email {
+  width: 30%; /* tamaño proporcional */
+  display: block;
+  margin: 0 auto; /* centrado horizontal */
+}
